@@ -37,6 +37,10 @@ a:link {
     color: var(--accent-color)
 }
 
+a:visited {
+    color: var(--accent-color);
+}
+
 header {
     margin: 5% 25% 0 25%;
     padding: 1rem;
