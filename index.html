@@ -2,32 +2,38 @@
 
 <html>
     <head lang="en">
+        <meta charset="UTF-8">
         <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
         <title>
             Di Tota Gaetano
         </title>
-        <meta charset="UTF-8">
         <meta name="viewport" content="device=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./css/style.css">
+        <script type="module" src="./javascript/script.js"></script>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+        </style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=lightbulb_2">
     </head>
 
     <body>
-        <header>
-            <img src="https://avatars.githubusercontent.com/u/73028528" alt="Profile picture">
+        <header class="card">
+            <img id="profile-picture" src="https://avatars.githubusercontent.com/u/73028528" alt="Profile picture">
             
-            <section>
+            <section id="info">
                 <h1>Di Tota Gaetano</h1>
                 <p>Computer Scientist</p>
                 <p>Based in Naples, Italy</p>
                 <p>Bachelor's Degree in Computer Science | University of Naples Federico II</p>
             </section>
             
-            <section>
-                <button>
-                    GitHub
-                </button>
-                <button>
-                    Linkedin
-                </button>
+            <section id="social">
+                <a href="https://www.github.com/RiuHz" target="_self">GitHub</a>
+                <a href="https://it.linkedin.com/in/gaetano-di-tota" target="_self">Linkedin</a>
+            </section>
+
+            <section id="theme">
+                <span id="theme-button" class="material-symbols-outlined">lightbulb_2</span>
             </section>
         </header>
 
@@ -51,15 +57,9 @@
 
         <footer>
             <section>
-                <button>
+                <a>
                     Back to Top
-                </button>
-                <button>
-                    About this Website
-                </button>
-                <button>
-                    Contact Me
-                </button>
+                </a>
             </section>
 
             <section>
@@ -67,12 +67,8 @@
             </section>
 
             <section>
-                <button>
-                    GitHub
-                </button>
-                <button>
-                    LinkedIn
-                </button>
+                <a href="https://www.github.com/RiuHz" target="_self">GitHub</a>
+                <a href="https://it.linkedin.com/in/gaetano-di-tota" target="_self">LinkedIn</a>
             </section>
         </footer>
     </body>
