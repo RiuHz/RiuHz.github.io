@@ -32,11 +32,17 @@ body {
 
 a:link {
     text-decoration: none;
-    color: var(--accent-color)
+    color: var(--accent-color);
+
+    transition: 1s ease-in-out;
 }
 
 a:visited {
     color: var(--accent-color);
+}
+
+a:hover {
+    color: var(--highlight-color);
 }
 
 header {
@@ -56,7 +62,15 @@ main {
 main section {
     padding: 1rem;
 
+    position: relative;
+
     border-left: 0.5rem solid var(--secondary-color);
+
+    transition: 1s ease-in-out;
+}
+
+main section:hover {
+   border-left: 0.5rem solid var(--accent-color);
 }
 
 footer {
