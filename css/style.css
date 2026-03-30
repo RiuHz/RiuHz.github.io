@@ -1,11 +1,10 @@
 
 [data-theme="light"] {
-    --primary-color: #FFFFFF
-    --secondary-color: #F5F5F5;
-    --tertiary-color: #D3D3D3;
+    --primary-color: #F0F4F8;
+    --secondary-color: #E3E8F1;
 
-    --text-primary-color: #000000;
-    --text-secondary-color: #555555;
+    --text-primary-color: #212121;
+    --text-secondary-color: #616161;
 
     --accent-color: #0288D1;
     --highlight-color: #03A9F4;
