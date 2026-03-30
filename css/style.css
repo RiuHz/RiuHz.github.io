@@ -14,7 +14,6 @@
 [data-theme="dark"] {
     --primary-color: #121212;
     --secondary-color: #1E1E1E;
-    --tertiary-color: #A0A0A0;
 
     --text-primary-color: #FFFFFF;
     --text-secondary-color: #B0B0B0;
@@ -43,9 +42,9 @@ a:visited {
 
 header {
     margin: 5% 25% 0 25%;
-    padding: 1rem;
 
     display: grid;
+    gap: 0 1rem;
     grid-template-rows: auto auto auto;
     grid-template-columns: auto auto auto;
     grid-template-areas:
@@ -54,7 +53,32 @@ header {
         "picture social theme";
 }
 
+main {
+    margin: 0 25%;
+}
+
+main section {
+    padding: 1rem;
+
+    border-left: 0.5rem solid var(--secondary-color);
+}
+
+footer {
+    padding: 1rem 25%;
+
+    background-color: var(--secondary-color);
+
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+    grid-template-areas:
+        "troubles icons"
+        "signature signature";
+}
+
 .card {
+    padding: 1rem;
+
     border-radius: 2rem;
     background-color: var(--secondary-color);
 }
@@ -94,9 +118,29 @@ header {
 #theme {
     grid-area: theme;
 
-    margin: 1rem auto auto auto;
+    margin: 2rem 2rem auto auto;
 }
 
 #theme-button {
     cursor: pointer;
+}
+
+#education p {
+    color: var(--text-secondary-color);
+}
+
+#troubles {
+    grid-area: troubles;
+}
+
+#icons {
+    grid-area: icons;
+    
+    margin-left: auto;
+}
+
+#signature {
+    grid-area: signature;
+
+    padding-top: 1rem;
 }
