@@ -23,7 +23,7 @@
 }
 
 body {
-    margin: 0;
+    margin: 2rem 0 0 0;
 
     background-color: var(--primary-color);
     color: var(--text-primary-color);
@@ -41,20 +41,17 @@ a:visited {
 }
 
 header {
-    margin: 5% 25% 0 25%;
+    margin: 0 auto;
+    max-width: 750px;
 
-    display: grid;
-    gap: 0 1rem;
-    grid-template-rows: auto auto auto;
-    grid-template-columns: auto auto auto;
-    grid-template-areas:
-        "picture info theme"
-        "picture info theme"
-        "picture social theme";
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 main {
-    margin: 0 25%;
+    margin: 0 auto;
+    max-width: 750px;
 }
 
 main section {
@@ -64,32 +61,26 @@ main section {
 }
 
 footer {
-    padding: 1rem 25%;
+    padding: 1rem;
 
     background-color: var(--secondary-color);
+}
 
-    display: grid;
-    grid-template-rows: auto auto;
-    grid-template-columns: auto auto;
-    grid-template-areas:
-        "troubles icons"
-        "signature signature";
+footer section {
+    margin: 1rem auto;
+    max-width: 750px;
 }
 
 .card {
-    padding: 1rem;
+    padding: 2rem;
 
     border-radius: 2rem;
     background-color: var(--secondary-color);
 }
 
-#profile-picture {
-    grid-area: picture;
-    
-    margin: auto;
-
-    width: 70%;
-    height: 70%;
+#profile-picture {    
+    width: 10rem;
+    height: 10rem;
 
     border-radius: 100%;
     border: 0.5rem solid var(--accent-color);
@@ -103,44 +94,29 @@ footer {
     transform: translateY(-0.5rem);
 }
 
-#info {
-    grid-area: info;
-}
-
 #info p {
     color: var(--text-secondary-color)
-}
-
-#social {
-    grid-area: social;
-}
-
-#theme {
-    grid-area: theme;
-
-    margin: 2rem 2rem auto auto;
-}
-
-#theme-button {
-    cursor: pointer;
 }
 
 #education p {
     color: var(--text-secondary-color);
 }
 
-#troubles {
-    grid-area: troubles;
-}
+@media (max-width: 768px) {
+    header {
+        margin: 0 1rem;
+        max-width: initial;
 
-#icons {
-    grid-area: icons;
-    
-    margin-left: auto;
-}
+        flex-direction: column;
+    }
 
-#signature {
-    grid-area: signature;
+    main {
+        margin: 0 1rem;
+        max-width: initial;
+    }
 
-    padding-top: 1rem;
+    footer section {
+        margin: 0 1rem;
+        max-width: initial;
+    }
 }
