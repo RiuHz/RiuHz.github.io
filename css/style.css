@@ -115,7 +115,7 @@ footer section {
     color: var(--text-secondary-color);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     header {
         margin: 0 2rem;
         max-width: initial;
