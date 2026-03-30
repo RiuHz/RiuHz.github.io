@@ -104,19 +104,19 @@ footer section {
 
 @media (max-width: 768px) {
     header {
-        margin: 0 1rem;
+        margin: 0 2rem;
         max-width: initial;
 
         flex-direction: column;
     }
 
     main {
-        margin: 0 1rem;
+        margin: 0 2rem;
         max-width: initial;
     }
 
     footer section {
-        margin: 0 1rem;
+        margin: 0 2rem;
         max-width: initial;
     }
 }
