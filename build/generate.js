@@ -25,7 +25,7 @@ const projectsHTML = projects.map(project => `
                     <p>${escapeHTML(project.origin)}</p>
                     <p>${escapeHTML(project.description)}</p>
                 </section>
-`);
+`).join("\n");
 
 const template = readFileSync(
     join(__dirname, "../index.html"),
