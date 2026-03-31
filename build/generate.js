@@ -15,7 +15,7 @@ function escapeHTML(string) {
 }
 
 const projects = JSON.parse(
-    readFileSync(join(__dirname, "build/projects.json"), "utf-8")
+    readFileSync(join(__dirname, "projects.json"), "utf-8")
 );
 
 const projectsHTML = projects.map(project => `
@@ -27,11 +27,11 @@ const projectsHTML = projects.map(project => `
     </section>
 `).join("\n");
 
-const template = readFileSync("index.html", "utf-8");
+const template = readFileSync("../index.html", "utf-8");
 
 const output = template.replace(
     "<!-- PROJECTS -->",
     projectsHTML
 );
 
-writeFileSync("dist/index.html", output);
+writeFileSync("../dist/index.html", output);
