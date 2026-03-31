@@ -130,6 +130,8 @@ footer section {
         width: auto;
 
         flex-direction: column;
+
+        text-align: center;
     }
 
     main {
@@ -140,5 +142,7 @@ footer section {
     footer section {
         margin: 0 2rem;
         width: auto;
+
+        text-align: center;
     }
 }
