@@ -19,13 +19,13 @@ const projects = JSON.parse(
 );
 
 const projectsHTML = projects.map(project => `
-    <section class="project">
-        <h3>${escapeHTML(project.title)}</h3>
-        <span>${project.languages.map(escapeHTML).join(" ")}</span>
-        <p>${escapeHTML(project.origin)}</p>
-        <p>${escapeHTML(project.description)}</p>
-    </section>
-`).join("\n");
+                <section class="project">
+                    <h3>${escapeHTML(project.title)}</h3>
+                    <span>${project.languages.map(escapeHTML).join(" ")}</span>
+                    <p>${escapeHTML(project.origin)}</p>
+                    <p>${escapeHTML(project.description)}</p>
+                </section>
+`);
 
 const template = readFileSync(
     join(__dirname, "../index.html"),
