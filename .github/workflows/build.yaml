@@ -33,7 +33,7 @@ jobs:
       - name: Copy static files
         run: |
           cp -r css/*.css dist/css/
-          cp -r images/* dist/images
+          cp -r images/* dist/images/
           cp -r javascript/*.js dist/javascript/
           cp index.html dist/
 
