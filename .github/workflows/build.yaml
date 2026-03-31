@@ -22,20 +22,23 @@ jobs:
         with:
           node-version: 24
 
-      - name: Create dist structure
+      - name: Create dist folder
         run: |
-          mkdir -p dist/css
-          mkdir -p dist/javascript
+          mkdir dist
 
       - name: Generate HTML
         run: node build/generate.js
 
       - name: Copy static files
         run: |
-          cp -r css/*.css dist/css/
-          cp -r images/* dist/images
-          cp -r javascript/*.js dist/javascript/
+          cp -r css dist/
+          cp -r images dist/
+          cp -r javascript dist/
           cp index.html dist/
+
+      - name: Check dist folder
+        run: |
+          ls -R dist
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
