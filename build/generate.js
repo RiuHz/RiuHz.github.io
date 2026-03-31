@@ -38,6 +38,6 @@ const output = template.replace(
 );
 
 writeFileSync(
-    join(__dirname, "../dist/index.html"),
+    join(__dirname, "../index.html"),
     output
 );
