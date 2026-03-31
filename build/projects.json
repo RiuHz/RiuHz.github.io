@@ -1,11 +1,5 @@
 [
   {
-    "title": "Data Structures",
-    "languages": ["C++"],
-    "origin": "Work done for the course \"Laboratory of Algorithms and Data Structures\"",
-    "description": "This projects implements various data structures with the aim of providing a simple and intuitive interface for each structure."
-  },
-  {
     "title": "Connect Four",
     "languages": ["C", "C++"],
     "origin": "Work done for the course \"Laboratory of Operating Systems\"",
@@ -16,6 +10,12 @@
     "languages": ["Java", "Dart"],
     "origin": "Work done for the course \"Software Engineering\"",
     "description": "UniNaBugBoard26 is a bug tracking and management system for software projects, designed to handle issue tracking, management, and resolution. It is built with Spring Boot and leverages cloud infrastructure such as AWS."
+  },
+  {
+    "title": "Data Structures",
+    "languages": ["C++"],
+    "origin": "Work done for the course \"Laboratory of Algorithms and Data Structures\"",
+    "description": "This projects implements various data structures with the aim of providing a simple and intuitive interface for each structure."
   },
   {
     "title": "UniNaSwap",
