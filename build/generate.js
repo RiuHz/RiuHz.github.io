@@ -27,11 +27,17 @@ const projectsHTML = projects.map(project => `
     </section>
 `).join("\n");
 
-const template = readFileSync("../index.html", "utf-8");
+const template = readFileSync(
+    join(__dirname, "../index.html"),
+    "utf-8"
+);
 
 const output = template.replace(
     "<!-- PROJECTS -->",
     projectsHTML
 );
 
-writeFileSync("../dist/index.html", output);
+writeFileSync(
+    join(__dirname, "../dist/index.html"),
+    output
+);
