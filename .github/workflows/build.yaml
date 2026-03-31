@@ -37,9 +37,6 @@ jobs:
         with:
           path: dist
 
-      - name: Check output
-        run: ls -R dist
-
   deploy:
     needs: build
     runs-on: ubuntu-latest
