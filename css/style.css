@@ -70,19 +70,8 @@ main {
     flex-grow: 1;
 }
 
-main section {
-    padding: 1rem;
-
-    border-left: 0.5rem solid var(--secondary-color);
-
-    transition: 1s ease-in-out;
-}
-
-main section:hover {
-   border-left: 0.5rem solid var(--accent-color);
-}
-
 footer {
+    margin-top: 1rem;
     padding: 1rem;
 
     background-color: var(--secondary-color);
@@ -98,6 +87,49 @@ footer section {
 
     border-radius: 2rem;
     background-color: var(--secondary-color);
+}
+
+.project {
+    padding: 0 2rem;
+    
+    border-radius: 5%;
+    border-left: 0.5rem solid var(--secondary-color);
+
+    transition: 1s ease-in-out;
+}
+
+.project:hover {
+   border-left: 0.5rem solid var(--accent-color);
+
+   ul li {
+    color: var(--highlight-color);
+   }
+
+   p {
+    opacity: 1;
+   }
+}
+
+.project ul {
+    list-style: none;
+
+    margin: 0;
+    padding: 0;
+}
+
+.project ul li {
+    display: inline;
+    
+    color: var(--text-secondary-color);
+
+    transition: 1s ease-in-out;
+}
+
+.project p {
+    color: var(--text-secondary-color);
+    opacity: 0.5;
+
+    transition: 1s ease-in-out;
 }
 
 #profile-picture {    
@@ -122,6 +154,18 @@ footer section {
 
 #education p {
     color: var(--text-secondary-color);
+}
+
+#education section {
+    padding: 1rem;
+
+    border-left: 0.5rem solid var(--secondary-color);
+
+    transition: 1s ease-in-out;
+}
+
+#education section:hover {
+   border-left: 0.5rem solid var(--accent-color);
 }
 
 @media (max-width: 900px) {
