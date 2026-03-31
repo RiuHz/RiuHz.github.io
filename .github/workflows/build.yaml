@@ -36,6 +36,10 @@ jobs:
           cp -r javascript dist/
           cp index.html dist/
 
+      - name: Check dist folder
+        run: |
+          ls -R dist
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
         with:
